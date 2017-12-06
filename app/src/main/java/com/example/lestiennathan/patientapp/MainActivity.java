@@ -13,23 +13,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        TextView textviewVoirPatient = (TextView) findViewById(R.id.textview_VoirPatient);
+        TextView textviewCreerPatient = (TextView) findViewById(R.id.textview_CreerPatient);
 
-                    TextView textviewVoirPatient = (TextView) findViewById(R.id.textview_VoirPatient);
-            TextView textviewCreerPatient = (TextView) findViewById(R.id.textview_CreerPatient);
+        textviewVoirPatient.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intentVoirPatient = new Intent(MainActivity.this, ViewPatientActivity.class);
+                startActivity(intentVoirPatient);
+            }
+        });
 
-                       textviewVoirPatient.setOnClickListener(new View.OnClickListener(){
+        textviewCreerPatient.setOnClickListener(new View.OnClickListener(){
             @Override
-           public void onClick(View v){
-                                        Intent intentVoirPatient = new Intent(MainActivity.this, ViewPatientActivity.class);
-                                        startActivity(intentVoirPatient);
-                                 }
-       });
-                +        textviewCreerPatient.setOnClickListener(new View.OnClickListener(){
-            @Override
-           public void onClick(View v){
-                        +                Intent intentCreerPatient = new Intent(MainActivity.this, CreatePatientActivity.class);
-                        +                startActivity(intentCreerPatient);
-                        +            }
-       });
+            public void onClick(View v){
+                Intent intentCreerPatient = new Intent(MainActivity.this, CreatePatientActivity.class);
+                startActivity(intentCreerPatient);
+            }
+        });
     }
 }

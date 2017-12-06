@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lestiennathan.patientapp.CreatePatientActivity"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Creation de patient"
+        android:textColor="@android:color/black"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/textview_Nom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Nom :"
+                android:textColor="@android:color/black"/>
+
+                <EditText
+                android:id="@+id/editTextNom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/textview_Prenom"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Prenom :"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/editTextPrenom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/textview_Age"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="Age :"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/textview_Chambre"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="N°Chambre :"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/editTextChambre"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/textview_Motif"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="Motif :"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/editTextMotif"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonInscrire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscrire" />
+</LinearLayout>
