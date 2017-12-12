@@ -41,8 +41,6 @@ public class PatientAdapter extends ArrayAdapter<Patient> {
         TextView textViewPrenom = (TextView) ListItemView.findViewById(R.id.Prenom) ;
         textViewPrenom.setText(currentPatient.get_prenom());
 
-        ImageView iconView = (ImageView) ListItemView.findViewById(R.id.list_item_icon);
-        iconView.setImageResource(R.drawable.cooper);
 
 
 

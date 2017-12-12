@@ -106,13 +106,14 @@
             android:text="Motif :"
             android:textColor="@android:color/black"/>
 
-        <EditText
-            android:id="@+id/editTextMotif"
-            android:layout_width="150dp"
+        <Spinner
+            android:id="@+id/SpinnerMotif"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:textAlignment="center"
+            android:textSize="25sp">
+
+        </Spinner>
     </LinearLayout>
     <Button
         android:id="@+id/buttonInscrire"
