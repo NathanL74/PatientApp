@@ -22,6 +22,7 @@ public class Patient extends SugarRecord {
         _age = unAge;
     }
 
+
     public String get_nom() {
         return _nom;
     }
