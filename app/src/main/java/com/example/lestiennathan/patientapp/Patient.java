@@ -1,17 +1,22 @@
 package com.example.lestiennathan.patientapp;
 
 import com.orm.SugarRecord;
+import com.orm.dsl.Unique;
 
 /**
  * Created by leclercq.sylvain on 06/12/2017.
  */
 
 public class Patient extends SugarRecord {
+
     String _nom;
     String _prenom;
     String _chambre;
     String _motif;
     String _age;
+
+    public Patient(){
+    }
 
     public Patient(String unNom, String unPrenom, String uneChambre, String unAge, String unMotif)
     {
