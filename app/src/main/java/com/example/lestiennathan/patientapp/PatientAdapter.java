@@ -35,11 +35,14 @@ public class PatientAdapter extends ArrayAdapter<Patient> {
         }
         Patient currentPatient = getItem(position);
 
-        TextView TextViewEng = (TextView) ListItemView.findViewById(R.id.Nom) ;
-        TextViewEng.setText(currentPatient.get_nom());
+        TextView TextViewNom = (TextView) ListItemView.findViewById(R.id.Nom) ;
+        TextViewNom.setText(currentPatient.get_nom());
 
-        TextView textViewFr = (TextView) ListItemView.findViewById(R.id.Prenom) ;
-        textViewFr.setText(currentPatient.get_prenom());
+        TextView textViewPrenom = (TextView) ListItemView.findViewById(R.id.Prenom) ;
+        textViewPrenom.setText(currentPatient.get_prenom());
+
+        ImageView iconView = (ImageView) ListItemView.findViewById(R.id.list_item_icon);
+        iconView.setImageResource(R.drawable.cooper);
 
 
 
