@@ -2,6 +2,8 @@ package com.example.lestiennathan.patientapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
@@ -10,6 +12,8 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        Button boutonSuppr = (Button) findViewById(R.id.ButtonSupprimer);
 
         Patient monPatient = (Patient) getIntent().getSerializableExtra("Patient : ");
 
@@ -28,5 +32,7 @@ public class DetailActivity extends AppCompatActivity {
         TextView textDetailStatut;
         TextView textViewStatutDetail = (TextView) findViewById(R.id.textViewStatutDetail);
         textViewStatutDetail.setText(monPatient.toString());
+
+        ArrayAdapter<CharSequence> traitementadapter = ArrayAdapter.createFromResource(this,R.array.Motifs,android.R.layout.simple_spinner_item);
     }
 }
