@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView textviewVoirPatient = (TextView) findViewById(R.id.textview_VoirPatient);
-        TextView textviewCreerPatient = (TextView) findViewById(R.id.textview_CreerPatient);
+        TextView textviewCreerPatient = (TextView) findViewById(R.id.textview_CreePatient);
 
         textviewVoirPatient.setOnClickListener(new View.OnClickListener(){
             @Override
