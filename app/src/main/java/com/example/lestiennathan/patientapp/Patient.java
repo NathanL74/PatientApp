@@ -2,16 +2,18 @@ package com.example.lestiennathan.patientapp;
 
 import com.orm.SugarRecord;
 
+import java.io.Serializable;
+
 /**
  * Created by leclercq.sylvain on 06/12/2017.
  */
 
-public class Patient extends SugarRecord {
-    String _nom;
-    String _prenom;
-    String _chambre;
-    String _motif;
-    String _age;
+public class Patient extends SugarRecord implements Serializable{
+    private String _nom;
+    private String _prenom;
+    private String _chambre;
+    private String _motif;
+    private String _age;
 
     public Patient(String unNom, String unPrenom, String uneChambre, String unAge, String unMotif)
     {
@@ -31,7 +33,7 @@ public class Patient extends SugarRecord {
     }
 
     public String get_age() {
-        return _age;
+        return _age + "an(s)";
     }
 
     public String get_chambre() {
@@ -41,4 +43,5 @@ public class Patient extends SugarRecord {
     public String get_motif() {
         return _motif;
     }
+
 }

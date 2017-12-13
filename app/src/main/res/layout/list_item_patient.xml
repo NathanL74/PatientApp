@@ -13,7 +13,7 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingLeft="16dp">
-        <ImageView
+       <ImageView
             android:id="@+id/list_item_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"/>

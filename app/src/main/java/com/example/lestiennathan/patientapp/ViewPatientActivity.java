@@ -23,7 +23,7 @@ public class ViewPatientActivity extends AppCompatActivity {
         ArrayList<Patient> _lesPatients = new ArrayList<Patient>();
         _lesPatients.add(new Patient("LA", "Xavier","C012","12","Fracture"));
         _lesPatients.add(new Patient("Lestien", "Nathan","C015","15","sans"));
-        _lesPatients.add(new Patient("leclerc", "Sylvain","C018","10","tibiat"));
+        _lesPatients.add(new Patient("leclercq", "Sylvain","C018","10","tibias"));
         _lesPatients.add(new Patient("Ferreira", "Damien","C020","16","bras"));
 
         PatientAdapter adapterPatient =  new PatientAdapter(this, _lesPatients ); // la base de donnée
@@ -37,7 +37,7 @@ public class ViewPatientActivity extends AppCompatActivity {
                 Patient monPatient;
                 monPatient = (Patient) parent.getItemAtPosition(position);
                 Intent i = new Intent(ViewPatientActivity.this, DetailActivity.class);
-                i.putExtra("Patient : ", (Serializable) monPatient);
+                i.putExtra("Patient : ", monPatient);
                 startActivity(i);
             }
         });
