@@ -13,6 +13,10 @@ public class Patient extends SugarRecord {
     String _motif;
     String _age;
 
+    public Patient(){
+
+    }
+
     public Patient(String unNom, String unPrenom, String uneChambre, String unAge, String unMotif)
     {
         _nom = unNom;
