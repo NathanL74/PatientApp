@@ -11,4 +11,4 @@
            android:layout_height="wrap_content"
            android:id="@+id/ListViewPatient"
             />
-</android.support.constraint.ConstraintLayout> 
+</android.support.constraint.ConstraintLayout>

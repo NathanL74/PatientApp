@@ -41,9 +41,6 @@ public class PatientAdapter extends ArrayAdapter<Patient> {
         TextView textViewFr = (TextView) ListItemView.findViewById(R.id.Prenom) ;
         textViewFr.setText(currentPatient.get_prenom());
 
-
-
-
         return ListItemView;
     }
 }

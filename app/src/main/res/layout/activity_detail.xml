@@ -13,42 +13,50 @@
         android:orientation="horizontal"
         >
 
-        <TextView
+        <EditText
             android:id="@+id/TextViewNomDetail"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:textSize="20sp"
 
             />
 
-        <TextView
+        <EditText
             android:id="@+id/TextViewPrenomDetail"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:textSize="20sp"
 
             />
 
-        <TextView
+        <EditText
             android:id="@+id/TextViewAgeDetail"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:textSize="20sp"
 
             />
 
-        <TextView
+        <EditText
             android:id="@+id/TextViewNumChambreDetail"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:textSize="20sp"
 
             />
 
+        <EditText
+            android:id="@+id/TextViewMotifDetail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+
+            />
 
     </LinearLayout>
 
@@ -71,4 +79,3 @@
 
 
 </LinearLayout>
-

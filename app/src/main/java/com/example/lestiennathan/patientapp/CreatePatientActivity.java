@@ -33,10 +33,12 @@ public class CreatePatientActivity extends AppCompatActivity {
 
                 Patient patientBDD =  Patient.last(Patient.class);
 
-                Toast.makeText(CreatePatientActivity.this, "patient bdd = " + patientBDD.get_nom(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(CreatePatientActivity.this, "Patient créé = " + patientBDD.get_nom(), Toast.LENGTH_SHORT).show();
 
             }
         });
+
+
 
     }
 }

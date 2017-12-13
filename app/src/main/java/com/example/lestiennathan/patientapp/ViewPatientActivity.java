@@ -38,7 +38,7 @@ public class ViewPatientActivity extends AppCompatActivity {
                 Patient monPatient;
                 monPatient = (Patient) parent.getItemAtPosition(position);
                 Intent i = new Intent(ViewPatientActivity.this, DetailActivity.class);
-                i.putExtra("Patient : ", (Serializable) monPatient);
+                i.putExtra("Patient : ", monPatient);
                 startActivity(i);
             }
         });

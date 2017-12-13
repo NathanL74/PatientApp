@@ -3,11 +3,13 @@ package com.example.lestiennathan.patientapp;
 import com.orm.SugarRecord;
 import com.orm.dsl.Unique;
 
+import java.io.Serializable;
+
 /**
  * Created by leclercq.sylvain on 06/12/2017.
  */
 
-public class Patient extends SugarRecord {
+public class Patient extends SugarRecord implements Serializable{
 
     @Unique
     private String _nom;

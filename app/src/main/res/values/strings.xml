@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PatientApp</string>
+    <string-array name="Motifs">
+        <item>Maladie</item>
+        <item>Cancer</item>
+        <item>Brulure</item>
+    </string-array>
 </resources>
