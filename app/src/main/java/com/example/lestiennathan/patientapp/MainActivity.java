@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         textviewVoirPatient.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intentVoirPatient = new Intent(MainActivity.this, ViewPatientActivity.class);
+                Intent intentVoirPatient = new Intent(MainActivity.this, VoirPatientActivity.class);
                 startActivity(intentVoirPatient);
             }
         });
