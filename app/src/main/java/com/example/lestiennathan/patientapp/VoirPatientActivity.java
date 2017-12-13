@@ -13,7 +13,7 @@ public class VoirPatientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voir_patient);
 
-        PatientAdapter adapterPatient =  new PatientAdapter(); // la base de données
+        PatientAdapter adapterPatient =  new PatientAdapter(); // la base de donnée
         ListView ListViewVoirPatient = (ListView) findViewById(ListViewPatient);
         ListViewPatient.setAdapter(adapterPatient);
 
