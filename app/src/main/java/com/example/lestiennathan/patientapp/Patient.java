@@ -9,11 +9,12 @@ import com.orm.dsl.Unique;
 
 public class Patient extends SugarRecord {
 
-    String _nom;
-    String _prenom;
-    String _chambre;
-    String _motif;
-    String _age;
+    @Unique
+    private String _nom;
+    private String _prenom;
+    private String _chambre;
+    private String _motif;
+    private String _age;
 
     public Patient(){
     }
