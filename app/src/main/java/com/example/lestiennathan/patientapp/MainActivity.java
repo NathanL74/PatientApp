@@ -14,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView textviewVoirPatient = (TextView) findViewById(R.id.textview_VoirPatient);
-        TextView textviewCreerPatient = (TextView) findViewById(R.id.textview_CreerPatient);
+        TextView textviewCreerPatient = (TextView) findViewById(R.id.textview_CreePatient);
 
         textviewVoirPatient.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intentVoirPatient = new Intent(MainActivity.this, VoirPatientActivity.class);
+                Intent intentVoirPatient = new Intent(MainActivity.this, ViewPatientActivity.class);
                 startActivity(intentVoirPatient);
             }
         });
