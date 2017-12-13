@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreatePatientActivity" />
-        <activity android:name=".VoirPatientActivity"></activity>
+        <activity android:name=".VoirPatientActivity" />
+        <activity android:name=".ViewPatientActivity"></activity>
     </application>
 
 </manifest>
